@@ -2,7 +2,7 @@
 
 Your SMC-PAD pads feel dead and you have to hammer them to get a decent velocity? This is a ~20 minute fix: open the unit, stick 16 small spacers in the pad cavities, close it. No soldering, no glue gun, no 15-minute video.
 
-Spacers are **laser-cut** (self-adhesive paper), **3D-printed**, or just **strips of electrical tape**. Pick whichever you have.
+Spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and tested), **3D-printed** (not tested yet), or just **strips of electrical tape**. Pick whichever you have.
 
 > Inspired by Owl Muso's [M Vave SMC Pad Sensitivity Hack](https://www.youtube.com/watch?v=G5knDHVOgrA). Same idea, minus the video: ready-made spacer files and a step-by-step with annotated photos.
 
@@ -13,8 +13,8 @@ Spacers are **laser-cut** (self-adhesive paper), **3D-printed**, or just **strip
 - A **PH0** Phillips screwdriver
 - A plastic pry tool, or a fingernail, to remove the rubber feet and the QR label
 - **16 spacers**, one of:
-  - laser-cut self-adhesive (sticker) paper, files below
-  - 3D-printed spacers (0.3 mm thick), file below
+  - laser-cut self-adhesive vinyl sheets (tested), files below
+  - 3D-printed spacers (0.3 mm thick), file below (**not tested**)
   - no laser, no printer? Strips of electrical tape (see below)
 - Something to keep screws in, with two separate compartments: 9 case screws and 9 PCB screws (they're different)
 
@@ -25,7 +25,7 @@ Spacers are **laser-cut** (self-adhesive paper), **3D-printed**, or just **strip
 | [`files/SMC-Pad_spacer_single.dxf`](files/SMC-Pad_spacer_single.dxf) | One spacer: 24 x 24 mm, 3 mm corner radius, cross cut-out |
 | [`files/SMC-Pad_spacers_sheet_4x4.dxf`](files/SMC-Pad_spacers_sheet_4x4.dxf) | 16 spacers on a 112 x 122 mm sheet (26 mm pitch). Layer `CUT_KISS` = spacers, layer `CUT_OUTER` = sheet outline |
 | [`files/SMC-Pad_spacers_LightBurn.lbrn2`](files/SMC-Pad_spacers_LightBurn.lbrn2) | Ready-to-run LightBurn project (sheet + title text + cut settings) |
-| [`files/SMC-Pad_spacers_3Dprint.3mf`](files/SMC-Pad_spacers_3Dprint.3mf) | 16 printed spacers, 23 x 23 x 0.3 mm. Sliced in Bambu Studio |
+| [`files/SMC-Pad_spacers_3Dprint.3mf`](files/SMC-Pad_spacers_3Dprint.3mf) | 16 printed spacers, 23 x 23 x 0.3 mm. Sliced in Bambu Studio. **Not tested yet** |
 
 All dimensions are in millimetres.
 
@@ -37,9 +37,9 @@ All dimensions are in millimetres.
 
 ### Making the spacers
 
-**Laser-cut (sticker paper)**
+**Laser-cut (self-adhesive vinyl sheet), tested**
 
-Load `SMC-Pad_spacers_LightBurn.lbrn2`, or import the sheet DXF. The idea is to *kiss-cut*: cut through the paper but not through the backing, so every spacer stays on its liner until you peel it.
+Load `SMC-Pad_spacers_LightBurn.lbrn2`, or import the sheet DXF. The idea is to *kiss-cut*: cut through the vinyl but not through the backing, so every spacer stays on its liner until you peel it.
 
 ![LightBurn project](images/lightburn-project.png)
 
@@ -51,7 +51,9 @@ The LightBurn project uses 3 layers, run in this order:
 
 Those numbers come from my machine (LightBurn device profile `LR4`). Run a small test first and tune power on your own laser, then make sure the backing survives.
 
-**3D-printed**
+**3D-printed (not tested)**
+
+I haven't tested the printed spacers yet, so treat this file as an untested starting point. Feedback welcome.
 
 Open the 3MF in Bambu Studio / Orca / PrusaSlicer. The project is set up for a Bambu Lab P1S, 0.6 mm nozzle, 0.12 mm layers, 2 walls, no supports. At 0.3 mm thick, the spacers are only a few layers. Print one first to check the fit, then print the rest.
 
