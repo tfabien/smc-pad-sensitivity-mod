@@ -105,8 +105,6 @@ Undo the 9 black screws that hold the PCB. The photo shows the 9 screw holes, wi
 
 Take the PCB out gently. The sheet with the black squares is a **separate, loose sheet**, not attached to the PCB or to the case. **Pay attention to its orientation**: it must go back the same way up and the same way round. The easy way: lay it down on the PCB as if you were opening the page of a book, so it keeps its orientation. The pad cavities in the top shell are now empty. Leave the sheet lying on the PCB for the next step.
 
-![PCB out](images/05-pcb-out.jpg)
-
 ![Empty cavities](images/06-cavities-empty.jpg)
 
 ### 6. Stick the spacers on the transparent sheet
