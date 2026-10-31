@@ -16,7 +16,7 @@ Spacers are **laser-cut** (self-adhesive paper), **3D-printed**, or just **strip
   - laser-cut self-adhesive (sticker) paper, files below
   - 3D-printed spacers (0.3 mm thick), file below
   - no laser, no printer? Strips of electrical tape (see below)
-- Something to keep screws in, with two separate compartments: 5 case screws and 9 PCB screws (they're different)
+- Something to keep screws in, with two separate compartments: 9 case screws and 9 PCB screws (they're different)
 
 ## Files
 
@@ -65,7 +65,7 @@ Cut strips of electrical tape and stick them in the cavities instead of the spac
 
 ### 1. Pull the knobs
 
-Pull all 8 rubber knobs straight up.
+Use a flat screwdriver and go **very slowly**. Slide it under the edge of a knob and lift a little, then move around the knob and lift from different angles. Never pull on one side only, or you'll bend the potentiometer. Repeat for all 8 knobs.
 
 ![Knobs off](images/01-knobs-off.jpg)
 
@@ -74,7 +74,10 @@ Pull all 8 rubber knobs straight up.
 Flip the unit over.
 
 - **1 to 4**: the four corner screws are hidden under the round rubber feet. Pry the feet off, then undo the screws.
-- **5**: peel the QR label back to find the centre screw, and undo it.
+- **5 to 8**: four uncovered screws, in the middle of each side.
+- **9**: peel the QR label back to find the centre screw, and undo it.
+
+That's 9 case screws in total.
 
 ![Back screws](images/02-back-screws.jpg)
 
@@ -88,15 +91,15 @@ Lift the bottom plate off. You now see the PCB (with the battery) sitting in the
 
 ### 4. Remove the 9 PCB screws
 
-Undo the 9 black screws that hold the PCB. The photo shows them in place.
+Undo the 9 black screws that hold the PCB. The photo shows the 9 screw holes, with the screws already out.
 
-> **Careful: the case screws and the PCB screws are not the same.** Keep them in two separate piles. The hole in the middle of the PCB is not for a PCB screw: it lets the **case screw** (step 2, screw 5) go through the PCB. When you put the PCB back, don't screw anything into that hole.
+> **Careful: the case screws and the PCB screws are not the same.** Keep them in two separate piles. The hole in the middle of the PCB is not for a PCB screw: it lets the **case screw** (step 2, screw 9) go through the PCB. When you put the PCB back, don't screw anything into that hole.
 
 ![PCB screws](images/04-pcb-screws.jpg)
 
 ### 5. Lift out the PCB
 
-Turn the PCB over, pad side up. Take it out gently. The black squares stay with the PCB side, and the silicone pad cavities in the top shell are now empty.
+Take the PCB out gently. The sheet with the black squares is a **separate, loose sheet**, not attached to the PCB or to the case. **Pay attention to its orientation**: it must go back the same way up and the same way round. The easy way: lay it down on the PCB as if you were opening the page of a book, so it keeps its orientation. The pad cavities in the top shell are now empty.
 
 ![PCB out](images/05-pcb-out.jpg)
 
@@ -119,11 +122,12 @@ Do all 16. Don't leave any out, or that pad will stay dull.
 
 Reverse the steps:
 
-1. Put the PCB back, pad side down, lined up on its posts.
-2. Refit the 9 black PCB screws, and only those. Leave the centre hole empty (it's for the case screw, see step 4).
-3. Plug the battery back in (last, once the PCB is screwed down).
-4. Fit the bottom plate and refit the 5 case screws (4 corners and the centre one, which goes through the PCB hole).
-5. Put the rubber feet back, stick the QR label back, push the 8 knobs on.
+1. Put the black-square sheet back in the cavities, over the spacers, in the same orientation as it came out. Take your time: this is where it's easy to get it flipped.
+2. Put the PCB back, pad side down, lined up on its posts.
+3. Refit the 9 black PCB screws, and only those. Leave the centre hole empty (it's for the case screw, see step 4).
+4. Plug the battery back in (last, once the PCB is screwed down).
+5. Fit the bottom plate and refit the 9 case screws (4 corners, 4 mid-side, and the centre one, which goes through the PCB hole).
+6. Put the rubber feet back, stick the QR label back, push the 8 knobs on.
 
 Plug it in and power it on. Last step: calibrate the pads in software.
 
