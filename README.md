@@ -113,15 +113,17 @@ The transparent sheet with the black pads is lying on the PCB (step 5). It's muc
 
 > **Careful with the side:** stick the spacers on the **silicone-pad side** of the sheet (the side that faces the case), **not on the PCB side**. If you laid the sheet down like a book page, that's the side facing up.
 
-1. **Full sheet (recommended):** remove the round holes and the slots from the vinyl so they're open, then peel the sheet off its backing. Lay it over the 16 pads in one go, starting from one edge and going progressively to avoid bubbles. Each round hole goes over a LED, with the slot vertical, as in the photos.
-2. **Individual spacers:** same thing, one spacer on each of the 16 pads.
+1. Remove the round holes and the slots from the vinyl so they're open, then peel the full sheet off its backing.
+2. Lay it over the 16 pads in one go, starting from one edge and going progressively to avoid bubbles. Each round hole goes over a LED, with the slot vertical, as in the photos.
 3. Check that you can see the LED through each round hole and the black pad through each slot.
+
+> Using the 16 individual spacers instead? Same thing, one spacer on each pad.
 
 ![Laying the spacer sheet](images/07-spacers-laying.jpg)
 
 ![Spacers stuck on the transparent sheet](images/08-spacers-stuck.jpg)
 
-> **Want even more sensitivity?** Stack **two layers**: stick a second sheet (or a second spacer on each pad) on top of the first, perfectly aligned. Do the same on all 16 pads so they stay even.
+> **Want even more sensitivity?** Stack **two layers**: stick a second full sheet (or a second spacer on each pad) on top of the first, perfectly aligned. Do the same on all 16 pads so they stay even.
 
 ### 7. Close it up
 
