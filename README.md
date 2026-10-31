@@ -1,6 +1,6 @@
 # M-Vave SMC-PAD: pad sensitivity mod
 
-Your SMC-PAD pads feel dead and you have to hammer them to get a decent velocity? This is a ~20 minute fix: open the unit, stick a sheet of spacers on the transparent sheet that carries the black pads, close it. No soldering, no glue gun, no 15-minute video.
+Your SMC-PAD pads feel dead and you have to hammer them to get a decent velocity? This is a ~20 minute fix: open the unit, stick a sheet of spacers on the transparent sheet that carries the black pads, close it. No soldering, no glue gun, no 15-minute video. And the mod is **fully reversible**: nothing is cut or glued to the unit itself, peel the spacers off and it's back to stock.
 
 The spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and tested), either as **one full sheet** covering all 16 pads at once (the easiest) or as 16 individual spacers. A **3D-printed** version is also provided (untested), and **strips of electrical tape** also work. Pick whichever you have.
 
@@ -152,6 +152,15 @@ The mod fixes the hardware, but the pads still need to be calibrated in software
 5. Hit a pad, adjust its level, hit it again. Repeat for each of the 16 pads until they all feel even.
 
 ![MidiSuite pad calibration](images/09-pad-calibration.jpg)
+
+### 9. Test and fine-tune
+
+Play all 16 pads, soft and hard.
+
+- **Still not sensitive enough?** Add a **second layer** of spacers, or use a **slightly thicker sheet**.
+- **Some pads stay constantly lit?** The sheet is **too thick**: use a **thinner one**.
+
+Since the mod is fully reversible, you can open the unit again (steps 1 to 7) and swap the sheet as many times as needed.
 
 ## Disclaimer
 
