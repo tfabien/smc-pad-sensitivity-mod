@@ -45,6 +45,8 @@ All dimensions are in millimetres. In the previews below, blue is the spacer cut
 
 Load `SMC-Pad_spacers_LightBurn.lbrn2`, or import one of the DXF files. The idea is to *kiss-cut*: cut through the vinyl but not through the backing.
 
+![LightBurn project with the three DXF files](images/lightburn-project.png)
+
 The LightBurn project uses 3 layers, run in this order:
 
 1. Title text, light engrave (1-5 % power, 25 mm/s)
