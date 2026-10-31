@@ -103,7 +103,7 @@ Undo the 9 black screws that hold the PCB. The photo shows the 9 screw holes, wi
 
 ### 5. Lift out the PCB
 
-Take the PCB out gently. The sheet with the black squares is a **separate, loose sheet**, not attached to the PCB or to the case. **Pay attention to its orientation**: it must go back the same way up and the same way round. The easy way: lay it down on the PCB as if you were opening the page of a book, so it keeps its orientation. The pad cavities in the top shell are now empty. Leave the sheet lying on the PCB for the next step.
+Take the PCB out gently. The sheet with the black squares is a **separate, loose sheet**, not attached to the PCB or to the case. **Pay attention to its orientation**: it must go back the same way up and the same way round. The easy way: lay it down on the PCB, so it keeps its orientation. The pad cavities in the top shell are now empty. Leave the sheet lying on the PCB for the next step.
 
 ![Empty cavities](images/06-cavities-empty.jpg)
 
@@ -111,7 +111,7 @@ Take the PCB out gently. The sheet with the black squares is a **separate, loose
 
 The transparent sheet with the black pads is lying on the PCB (step 5). It's much easier to stick the spacers **directly on it** than into the case cavities.
 
-> **Careful with the side:** stick the spacers on the **silicone-pad side** of the sheet (the side that faces the case), **not on the PCB side**. If you laid the sheet down like a book page, that's the side facing up.
+> **Careful with the side:** stick the spacers on the **silicone-pad side** of the sheet (the side that faces the case), **not on the PCB side**. Once the sheet is lying on the PCB, that's the side facing up.
 
 1. Remove the round holes and the slots from the vinyl so they're open, then peel the full sheet off its backing.
 2. Lay it over the 16 pads in one go, starting from one edge and going progressively to avoid bubbles. Each round hole goes over a LED, with the slot vertical, as in the photos.
@@ -129,7 +129,7 @@ The transparent sheet with the black pads is lying on the PCB (step 5). It's muc
 
 Reverse the steps:
 
-1. Close it like a book, the reverse of how you opened it: swing the PCB, with the transparent sheet and its spacers lying on it, back over the case. The sheet ends up against the silicone pads, the same way up as it came out. Take your time, this is where it's easy to flip it.
+1. Swing the PCB back over the case, the reverse of how you took it out, with the transparent sheet and its spacers lying on it. The sheet ends up against the silicone pads, the same way up as it came out. Take your time, this is where it's easy to flip it.
 2. Check that the PCB is lined up on its posts.
 3. Refit the 9 black PCB screws, and only those. Leave the centre hole empty (it's for the case screw, see step 4).
 4. Plug the battery back in (last, once the PCB is screwed down).
