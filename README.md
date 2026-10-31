@@ -1,8 +1,8 @@
 # M-Vave SMC-PAD: pad sensitivity mod
 
-Your SMC-PAD pads feel dead and you have to hammer them to get a decent velocity? This is a ~20 minute fix: open the unit, stick 16 small spacers in the pad cavities, close it. No soldering, no glue gun, no 15-minute video.
+Your SMC-PAD pads feel dead and you have to hammer them to get a decent velocity? This is a ~20 minute fix: open the unit, stick a sheet of spacers on the transparent sheet that carries the black pads, close it. No soldering, no glue gun, no 15-minute video.
 
-Spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and tested), **3D-printed** (not tested yet), or just **strips of electrical tape**. Pick whichever you have.
+The spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and tested), either as **one full sheet** covering all 16 pads at once (the easiest) or as 16 individual spacers. A 3D-printed version is planned but not ready yet, and **strips of electrical tape** also work. Pick whichever you have.
 
 > Inspired by Owl Muso's [M Vave SMC Pad Sensitivity Hack](https://www.youtube.com/watch?v=G5knDHVOgrA). Same idea, minus the video: ready-made spacer files and a step-by-step with annotated photos.
 
@@ -12,9 +12,10 @@ Spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and teste
 
 - A **PH0** Phillips screwdriver
 - A plastic pry tool, or a fingernail, to remove the rubber feet and the QR label
-- **16 spacers**, one of:
-  - laser-cut self-adhesive vinyl sheets (tested), files below
-  - 3D-printed spacers (0.3 mm thick), file below (**not tested**)
+- **Spacers**, one of:
+  - laser-cut self-adhesive vinyl, **full sheet** (recommended, one piece for all 16 pads), tested
+  - laser-cut self-adhesive vinyl, 16 individual spacers, tested
+  - 3D-printed spacers: the file is outdated and untested, see below
   - no laser, no printer? Strips of electrical tape (see below)
 - Something to keep screws in, with two separate compartments: 9 case screws and 9 PCB screws (they're different)
 
@@ -22,44 +23,41 @@ Spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and teste
 
 | File | What it is |
 |---|---|
-| [`files/SMC-Pad_spacer_single.dxf`](files/SMC-Pad_spacer_single.dxf) | One spacer: 24 x 24 mm, 3 mm corner radius, cross cut-out |
-| [`files/SMC-Pad_spacers_sheet_4x4.dxf`](files/SMC-Pad_spacers_sheet_4x4.dxf) | 16 spacers on a 112 x 122 mm sheet (26 mm pitch). Layer `CUT_KISS` = spacers, layer `CUT_OUTER` = sheet outline |
-| [`files/SMC-Pad_spacers_LightBurn.lbrn2`](files/SMC-Pad_spacers_LightBurn.lbrn2) | Ready-to-run LightBurn project (sheet + title text + cut settings) |
-| [`files/SMC-Pad_spacers_3Dprint.3mf`](files/SMC-Pad_spacers_3Dprint.3mf) | 16 printed spacers, 23 x 23 x 0.3 mm. Sliced in Bambu Studio. **Not tested yet** |
+| [`files/SMC-Pad_spacers_full_sheet.dxf`](files/SMC-Pad_spacers_full_sheet.dxf) | **One full sheet (136 x 136 mm)** covering all 16 pads at once, with rounded corners and notches, directly at the right size. Recommended |
+| [`files/SMC-Pad_spacers_sheet_4x4.dxf`](files/SMC-Pad_spacers_sheet_4x4.dxf) | 16 individual spacers (27 x 27 mm each) on a 125 x 130 mm sheet |
+| [`files/SMC-Pad_spacer_single.dxf`](files/SMC-Pad_spacer_single.dxf) | A single spacer (27 x 27 mm, with a round hole and a vertical slot) |
+| [`files/SMC-Pad_spacers_LightBurn.lbrn2`](files/SMC-Pad_spacers_LightBurn.lbrn2) | Ready-to-run LightBurn project (sheets + title text + cut settings) |
+| [`files/SMC-Pad_spacers_3Dprint.3mf`](files/SMC-Pad_spacers_3Dprint.3mf) | 3D-printable spacers. **Outdated** (still the previous cross-shaped design, not updated yet) and **not tested** |
 
-All dimensions are in millimetres.
+All dimensions are in millimetres. In the previews below, blue is the spacer cut, green the title text and red the outline of the sheet.
 
 <p>
-<img src="images/dxf-single-spacer.png" width="280" alt="Single spacer">
-<img src="images/dxf-sheet-4x4.png" width="320" alt="4x4 sheet">
-<img src="images/3mf-plate-preview.png" width="280" alt="3MF plate">
+<img src="images/dxf-full-sheet.png" width="360" alt="Full sheet">
+<img src="images/dxf-sheet-4x4.png" width="340" alt="Individual spacers sheet">
+<img src="images/dxf-single-spacer.png" width="200" alt="Single spacer">
 </p>
 
 ### Making the spacers
 
 **Laser-cut (self-adhesive vinyl sheet), tested**
 
-Load `SMC-Pad_spacers_LightBurn.lbrn2`, or import the sheet DXF. The idea is to *kiss-cut*: cut through the vinyl but not through the backing, so every spacer stays on its liner until you peel it.
-
-![LightBurn project](images/lightburn-project.png)
+Load `SMC-Pad_spacers_LightBurn.lbrn2`, or import one of the DXF files. The idea is to *kiss-cut*: cut through the vinyl but not through the backing.
 
 The LightBurn project uses 3 layers, run in this order:
 
 1. Title text, light engrave (1-5 % power, 25 mm/s)
-2. Spacers (outline and cross), kiss cut: 10 % power, 16.7 mm/s (1000 mm/min)
+2. Spacers (round holes, slots and outlines), kiss cut: 10-15 % power, 16.7 mm/s (1000 mm/min)
 3. Sheet outline, full cut: 30 % power, 16.7 mm/s (1000 mm/min)
 
 Those numbers come from my machine (LightBurn device profile `LR4`). Run a small test first and tune power on your own laser, then make sure the backing survives.
 
-**3D-printed (not tested)**
+**3D-printed (not ready)**
 
-I haven't tested the printed spacers yet, so treat this file as an untested starting point. Feedback welcome.
-
-Open the 3MF in Bambu Studio / Orca / PrusaSlicer. The project is set up for a Bambu Lab P1S, 0.6 mm nozzle, 0.12 mm layers, 2 walls, no supports. At 0.3 mm thick, the spacers are only a few layers. Print one first to check the fit, then print the rest.
+The 3MF in this repo is the previous cross-shaped design. It hasn't been updated to the new shape and it was never tested, so don't rely on it yet.
 
 **Electrical tape (no tools needed)**
 
-Cut strips of electrical tape and stick them in the cavities instead of the spacers, in step 6. Cheapest and quickest option.
+Instead of the spacers, stick strips of electrical tape on the transparent sheet, in step 6, on each pad. Cheapest and quickest option.
 
 ## Step by step
 
@@ -101,33 +99,34 @@ Undo the 9 black screws that hold the PCB. The photo shows the 9 screw holes, wi
 
 ### 5. Lift out the PCB
 
-Take the PCB out gently. The sheet with the black squares is a **separate, loose sheet**, not attached to the PCB or to the case. **Pay attention to its orientation**: it must go back the same way up and the same way round. The easy way: lay it down on the PCB as if you were opening the page of a book, so it keeps its orientation. The pad cavities in the top shell are now empty.
+Take the PCB out gently. The sheet with the black squares is a **separate, loose sheet**, not attached to the PCB or to the case. **Pay attention to its orientation**: it must go back the same way up and the same way round. The easy way: lay it down on the PCB as if you were opening the page of a book, so it keeps its orientation. The pad cavities in the top shell are now empty. Leave the sheet lying on the PCB for the next step.
 
 ![PCB out](images/05-pcb-out.jpg)
 
 ![Empty cavities](images/06-cavities-empty.jpg)
 
-### 6. Stick the spacers
+### 6. Stick the spacers on the transparent sheet
 
-Each pad cavity has a small nub in the middle. For each of the 16 cavities:
+The transparent sheet with the black pads is lying on the PCB (step 5). It's much easier to stick the spacers **directly on it** than into the case cavities.
 
-1. Peel one spacer off its backing (laser-cut version), place a printed one, or stick your tape strips.
-2. For cut or printed spacers, centre the **cross cut-out on the nub**, and press it flat into the cavity.
+> **Careful with the side:** stick the spacers on the **silicone-pad side** of the sheet (the side that faces the case), **not on the PCB side**. If you laid the sheet down like a book page, that's the side facing up.
 
-Do all 16. Don't leave any out, or that pad will stay dull.
+1. **Full sheet (recommended):** remove the round holes and the slots from the vinyl so they're open, then peel the sheet off its backing. Lay it over the 16 pads in one go, starting from one edge and going progressively to avoid bubbles. Each round hole goes over a LED, with the slot vertical, as in the photos.
+2. **Individual spacers:** same thing, one spacer on each of the 16 pads.
+3. Check that you can see the LED through each round hole and the black pad through each slot.
 
-> **Want even more sensitivity?** Stack **two layers** of spacers: stick a second one on top of the first, cross over cross, in each cavity. Do the same on all 16 pads so they stay even.
+![Laying the spacer sheet](images/07-spacers-laying.jpg)
 
-![Spacer sheet and cavities](images/07-spacer-sheet.jpg)
+![Spacers stuck on the transparent sheet](images/08-spacers-stuck.jpg)
 
-![Spacers placed](images/08-spacers-placed.jpg)
+> **Want even more sensitivity?** Stack **two layers**: stick a second sheet (or a second spacer on each pad) on top of the first, perfectly aligned. Do the same on all 16 pads so they stay even.
 
 ### 7. Close it up
 
 Reverse the steps:
 
-1. Put the black-square sheet back in the cavities, over the spacers, in the same orientation as it came out. Take your time: this is where it's easy to get it flipped.
-2. Put the PCB back, pad side down, lined up on its posts.
+1. Close it like a book, the reverse of how you opened it: swing the PCB, with the transparent sheet and its spacers lying on it, back over the case. The sheet ends up against the silicone pads, the same way up as it came out. Take your time, this is where it's easy to flip it.
+2. Check that the PCB is lined up on its posts.
 3. Refit the 9 black PCB screws, and only those. Leave the centre hole empty (it's for the case screw, see step 4).
 4. Plug the battery back in (last, once the PCB is screwed down).
 5. Fit the bottom plate and refit the 9 case screws (4 corners, 4 mid-side, and the centre one, which goes through the PCB hole).
