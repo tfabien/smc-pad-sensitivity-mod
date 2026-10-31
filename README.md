@@ -2,7 +2,7 @@
 
 Your SMC-PAD pads feel dead and you have to hammer them to get a decent velocity? This is a ~20 minute fix: open the unit, stick a sheet of spacers on the transparent sheet that carries the black pads, close it. No soldering, no glue gun, no 15-minute video.
 
-The spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and tested), either as **one full sheet** covering all 16 pads at once (the easiest) or as 16 individual spacers. A 3D-printed version is planned but not ready yet, and **strips of electrical tape** also work. Pick whichever you have.
+The spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and tested), either as **one full sheet** covering all 16 pads at once (the easiest) or as 16 individual spacers. A **3D-printed** version is also provided (untested), and **strips of electrical tape** also work. Pick whichever you have.
 
 > Inspired by Owl Muso's [M Vave SMC Pad Sensitivity Hack](https://www.youtube.com/watch?v=G5knDHVOgrA). Same idea, minus the video: ready-made spacer files and a step-by-step with annotated photos.
 
@@ -15,7 +15,7 @@ The spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and t
 - **Spacers**, one of:
   - laser-cut self-adhesive vinyl, **full sheet** (recommended, one piece for all 16 pads), tested
   - laser-cut self-adhesive vinyl, 16 individual spacers, tested
-  - 3D-printed spacers: the file is outdated and untested, see below
+  - 3D-printed spacers (STL / 3MF): untested, see below
   - no laser, no printer? Strips of electrical tape (see below)
 - Something to keep screws in, with two separate compartments: 9 case screws and 9 PCB screws (they're different)
 
@@ -27,7 +27,9 @@ The spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and t
 | [`files/SMC-Pad_spacers_sheet_4x4.dxf`](files/SMC-Pad_spacers_sheet_4x4.dxf) | 16 individual spacers (27 x 27 mm each) on a 125 x 130 mm sheet |
 | [`files/SMC-Pad_spacer_single.dxf`](files/SMC-Pad_spacer_single.dxf) | A single spacer (27 x 27 mm, with a round hole and a vertical slot) |
 | [`files/SMC-Pad_spacers_LightBurn.lbrn2`](files/SMC-Pad_spacers_LightBurn.lbrn2) | Ready-to-run LightBurn project (sheets + title text + cut settings) |
-| [`files/SMC-Pad_spacers_3Dprint.3mf`](files/SMC-Pad_spacers_3Dprint.3mf) | 3D-printable spacers. **Outdated** (still the previous cross-shaped design, not updated yet) and **not tested** |
+| [`files/SMC-Pad_spacers_full_sheet.stl`](files/SMC-Pad_spacers_full_sheet.stl) | 3D-printable full sheet. **Not tested** |
+| [`files/SMC-Pad_spacer_single.stl`](files/SMC-Pad_spacer_single.stl) | 3D-printable single spacer. **Not tested** |
+| [`files/SMC-Pad_spacers_3Dprint.3mf`](files/SMC-Pad_spacers_3Dprint.3mf) | 3D-printing project (3MF), updated to the new design. **Not tested** |
 
 All dimensions are in millimetres. In the previews below, blue is the spacer cut, green the title text and red the outline of the sheet.
 
@@ -51,9 +53,9 @@ The LightBurn project uses 3 layers, run in this order:
 
 Those numbers come from my machine (LightBurn device profile `LR4`). Run a small test first and tune power on your own laser, then make sure the backing survives.
 
-**3D-printed (not ready)**
+**3D-printed (untested)**
 
-The 3MF in this repo is the previous cross-shaped design. It hasn't been updated to the new shape and it was never tested, so don't rely on it yet.
+STL and 3MF files are provided for the new design. I haven't printed them myself (the vinyl version is the one I tested), so treat them as a starting point and let me know how it goes.
 
 **Electrical tape (no tools needed)**
 
