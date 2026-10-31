@@ -6,7 +6,7 @@ Spacers are **laser-cut** (self-adhesive paper), **3D-printed**, or just **strip
 
 > Inspired by Owl Muso's [M Vave SMC Pad Sensitivity Hack](https://www.youtube.com/watch?v=G5knDHVOgrA). Same idea, minus the video: ready-made spacer files and a step-by-step with annotated photos.
 
-![Spacer sheet](images/07-spacer-sheet.jpg)
+![Spacer sheet](images/00-spacer-sheet.jpg)
 
 ## What you need
 
@@ -135,10 +135,14 @@ Plug it in and power it on. Last step: calibrate the pads in software.
 
 The mod fixes the hardware, but the pads still need to be calibrated in software, otherwise you won't get the full benefit.
 
-1. Connect the SMC-PAD and open **MidiSuite** (M-Vave's editor, v1.15.0 in the screenshot).
-2. Click **Pad Calibration Mode**.
-3. Every pad has its own sensitivity level, from **Level 1 to Level 8** (factory setting: **Level 4**). Changes are saved to the device immediately.
-4. Hit a pad, adjust its level, hit it again. Repeat for each of the 16 pads until they all feel even.
+1. Install **MidiSuite**, M-Vave's editor (v1.15.0 in the screenshot). All downloads are on the official page: [m-vave.com/download](https://www.m-vave.com/download). Direct links to the current version:
+   - Windows: [MidiSuite_new.zip](https://yms-file-store.oss-cn-hongkong.aliyuncs.com/software/pc/MidiSuite_new.zip)
+   - macOS: [MidiSuite_new.dmg](https://yms-file-store.oss-cn-hongkong.aliyuncs.com/software/pc/MidiSuite_new.dmg)
+   - Mobile apps: [iOS](https://apps.apple.com/us/app/midi-suite/id6737530581) and [Android (APK)](https://resource.m-vave.com/software/app/MidiSuite.apk) (the mobile app lists the SMC-PAD Pocket, not the SMC-PAD, so use the desktop version)
+2. Connect the SMC-PAD and open MidiSuite.
+3. Click **Pad Calibration Mode**.
+4. Every pad has its own sensitivity level, from **Level 1 to Level 8** (factory setting: **Level 4**). Changes are saved to the device immediately.
+5. Hit a pad, adjust its level, hit it again. Repeat for each of the 16 pads until they all feel even.
 
 ![MidiSuite pad calibration](images/09-pad-calibration.jpg)
 
