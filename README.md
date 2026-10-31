@@ -114,6 +114,8 @@ Each pad cavity has a small nub in the middle. For each of the 16 cavities:
 
 Do all 16. Don't leave any out, or that pad will stay dull.
 
+> **Want even more sensitivity?** Stack **two layers** of spacers: stick a second one on top of the first, cross over cross, in each cavity. Do the same on all 16 pads so they stay even.
+
 ![Spacer sheet and cavities](images/07-spacer-sheet.jpg)
 
 ![Spacers placed](images/08-spacers-placed.jpg)
