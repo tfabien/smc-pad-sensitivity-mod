@@ -6,6 +6,8 @@ The spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and t
 
 > Inspired by Owl Muso's [M Vave SMC Pad Sensitivity Hack](https://www.youtube.com/watch?v=G5knDHVOgrA). Same idea, minus the video: ready-made spacer files and a step-by-step with annotated photos.
 
+> **Warning:** this mod voids your warranty and you do it at your own risk, see the [disclaimer](#disclaimer).
+
 ![Spacer sheet](images/00-spacer-sheet.jpg)
 
 ## What you need
@@ -164,7 +166,11 @@ Since the mod is fully reversible, you can open the unit again (steps 1 to 7) an
 
 ## Disclaimer
 
-You're opening a device with a lithium battery inside. Do this at your own risk, don't puncture or bend the battery, and don't short anything. This will probably void your warranty. This project is not affiliated with M-Vave.
+**This mod voids your warranty.** You open the unit and modify it at your own risk.
+
+This guide and these files are provided "as is", without warranty of any kind. I am not responsible for any damage to your device, battery or anything else, nor for any injury or loss resulting from following this guide or using these files. You do this entirely at your own risk.
+
+The unit contains a lithium battery: don't puncture or bend it, don't short anything, and unplug it before touching the PCB (step 3). This project is not affiliated with, endorsed by or supported by M-Vave.
 
 ## License
 
