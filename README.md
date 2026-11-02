@@ -1,37 +1,45 @@
 # M-Vave SMC-PAD: pad sensitivity mod
 
-Your SMC-PAD pads feel dead and you have to hammer them to get a decent velocity? This is a ~20 minute fix: open the unit, stick a sheet of spacers on the transparent sheet that carries the black pads, close it. No soldering, no glue gun, no 15-minute video. And the mod is **fully reversible**: nothing is cut or glued to the unit itself, peel the spacers off and it's back to stock.
+Your SMC-PAD pads feel dead and you have to hammer them to get a decent velocity? This is a ~20 minute fix: open the unit, add a thin spacer on each pad, close it. No soldering, no glue gun, no 15-minute video. And the mod is **fully reversible**: nothing is cut or glued to the unit itself, peel the spacers off and it's back to stock.
 
-The spacers are **laser-cut** from self-adhesive vinyl sheets (what I used and tested), either as **one full sheet** covering all 16 pads at once (the easiest) or as 16 individual spacers. A **3D-printed** version is also provided (untested), and **strips of electrical tape** also work. Pick whichever you have.
+I tried three kinds of spacers. **Strips of electrical tape are the clear winner** (and the cheapest), so that's what this guide recommends. The laser-cut and 3D-printed files are **experimental** and still need refining, see the comparison below.
 
 > Inspired by Owl Muso's [M Vave SMC Pad Sensitivity Hack](https://www.youtube.com/watch?v=G5knDHVOgrA). Same idea, minus the video: ready-made spacer files and a step-by-step with annotated photos.
 
 > **Warning:** this mod voids your warranty and you do it at your own risk, see the [disclaimer](#disclaimer).
 
-![Spacer sheet](images/00-spacer-sheet.jpg)
+![The M-Vave SMC-PAD](images/00-product.jpg)
+
+## Which spacers? What I tested
+
+| Method | Result | Status |
+|---|---|---|
+| **Electrical tape** | **Best.** Surprisingly the most effective, the thickness is just right. Two pads ended up stuck on, easily fixed with the calibration and by loosening a screw a little (see step 9) | **Recommended**, tested |
+| Laser-cut vinyl | Works, but doesn't add much sensitivity | Experimental, needs refining |
+| 3D-printed | The worst: a lot of pads stuck on | Experimental, needs refining |
+
 
 ## What you need
 
 - A **PH0** Phillips screwdriver
 - A plastic pry tool, or a fingernail, to remove the rubber feet and the QR label
-- **Spacers**, one of:
-  - laser-cut self-adhesive vinyl, **full sheet** (recommended, one piece for all 16 pads), tested
-  - laser-cut self-adhesive vinyl, 16 individual spacers, tested
-  - 3D-printed spacers (STL / 3MF): untested, see below
-  - no laser, no printer? Strips of electrical tape (see below)
+- **Electrical tape** (recommended): any common black PVC electrical tape, and scissors or a cutter
+- or, experimental: laser-cut self-adhesive vinyl, or 3D-printed spacers (files below)
 - Something to keep screws in, with two separate compartments: 9 case screws and 9 PCB screws (they're different)
 
-## Files
+## Files (experimental: laser-cut and 3D-printed spacers)
+
+These files are **experimental** and need refining: the vinyl version works but adds little sensitivity, and the 3D-printed one leaves many pads stuck on. You don't need any of them for the recommended tape method. If you improve them, send a PR!
 
 | File | What it is |
 |---|---|
-| [`files/SMC-Pad_spacers_full_sheet.dxf`](files/SMC-Pad_spacers_full_sheet.dxf) | **One full sheet (136 x 136 mm)** covering all 16 pads at once, with rounded corners and notches, directly at the right size. Recommended |
+| [`files/SMC-Pad_spacers_full_sheet.dxf`](files/SMC-Pad_spacers_full_sheet.dxf) | **One full sheet (136 x 136 mm)** covering all 16 pads at once, with rounded corners and notches, directly at the right size |
 | [`files/SMC-Pad_spacers_sheet_4x4.dxf`](files/SMC-Pad_spacers_sheet_4x4.dxf) | 16 individual spacers (27 x 27 mm each) on a 125 x 130 mm sheet |
 | [`files/SMC-Pad_spacer_single.dxf`](files/SMC-Pad_spacer_single.dxf) | A single spacer (27 x 27 mm, with a round hole and a vertical slot) |
 | [`files/SMC-Pad_spacers_LightBurn.lbrn2`](files/SMC-Pad_spacers_LightBurn.lbrn2) | Ready-to-run LightBurn project (sheets + title text + cut settings) |
-| [`files/SMC-Pad_spacers_full_sheet.stl`](files/SMC-Pad_spacers_full_sheet.stl) | 3D-printable full sheet. **Not tested** |
-| [`files/SMC-Pad_spacer_single.stl`](files/SMC-Pad_spacer_single.stl) | 3D-printable single spacer. **Not tested** |
-| [`files/SMC-Pad_spacers_3Dprint.3mf`](files/SMC-Pad_spacers_3Dprint.3mf) | 3D-printing project (3MF), updated to the new design. **Not tested** |
+| [`files/SMC-Pad_spacers_full_sheet.stl`](files/SMC-Pad_spacers_full_sheet.stl) | 3D-printable full sheet. Experimental: many pads stuck on |
+| [`files/SMC-Pad_spacer_single.stl`](files/SMC-Pad_spacer_single.stl) | 3D-printable single spacer. Experimental: many pads stuck on |
+| [`files/SMC-Pad_spacers_3Dprint.3mf`](files/SMC-Pad_spacers_3Dprint.3mf) | 3D-printing project (3MF), updated to the new design. Experimental: many pads stuck on |
 
 All dimensions are in millimetres. In the previews below, blue is the spacer cut, green the title text and red the outline of the sheet.
 
@@ -43,7 +51,11 @@ All dimensions are in millimetres. In the previews below, blue is the spacer cut
 
 ### Making the spacers
 
-**Laser-cut (self-adhesive vinyl sheet), tested**
+**Electrical tape (recommended)**
+
+No files needed. Cut **two small strips per pad** (32 in total), about the size of the ones in the photo of step 6, and stick them on each silicone pad, one on each side of the centre nub. One layer of tape is the right thickness.
+
+**Laser-cut self-adhesive vinyl (experimental)**
 
 Load `SMC-Pad_spacers_LightBurn.lbrn2`, or import one of the DXF files. The idea is to *kiss-cut*: cut through the vinyl but not through the backing.
 
@@ -55,15 +67,11 @@ The LightBurn project uses 3 layers, run in this order:
 2. Spacers (round holes, slots and outlines), kiss cut: 10-15 % power, 16.7 mm/s (1000 mm/min)
 3. Sheet outline, full cut: 30 % power, 16.7 mm/s (1000 mm/min)
 
-Those numbers come from my machine (LightBurn device profile `LR4`). Run a small test first and tune power on your own laser, then make sure the backing survives.
+Those numbers come from my machine (LightBurn device profile `LR4`). Run a small test first and tune power on your own laser, then make sure the backing survives. In my test the vinyl worked but added little sensitivity.
 
-**3D-printed (untested)**
+**3D-printed (experimental)**
 
-STL and 3MF files are provided for the new design. I haven't printed them myself (the vinyl version is the one I tested), so treat them as a starting point and let me know how it goes.
-
-**Electrical tape (no tools needed)**
-
-Instead of the spacers, stick strips of electrical tape on the transparent sheet, in step 6, on each pad. Cheapest and quickest option.
+STL and 3MF files are provided for the same design. In my test it was the worst option: a lot of pads stayed stuck on. Treat the files as a starting point and let me know how it goes.
 
 ## Step by step
 
@@ -109,9 +117,19 @@ Take the PCB out gently. The sheet with the black squares is a **separate, loose
 
 ![Empty cavities](images/06-cavities-empty.jpg)
 
-### 6. Stick the spacers on the transparent sheet
+### 6. Add the spacers
 
-The transparent sheet with the black pads is lying on the PCB (step 5). It's much easier to stick the spacers **directly on it** than into the case cavities.
+**Electrical tape (recommended)**
+
+Stick **two strips of electrical tape on each silicone pad** in the top shell, one on each side of the centre nub, as in the photo. Do all 16 pads and keep them as even as possible (same strips, same position).
+
+![Electrical tape strips on the silicone pads](images/07-tape-spacers.jpg)
+
+> **Want more sensitivity?** Add a second layer of tape. **Pads stay lit?** Too thick, see step 9.
+
+**Laser-cut vinyl (experimental)**
+
+The transparent sheet with the black pads is lying on the PCB (step 5). Stick the vinyl **directly on it**.
 
 > **Careful with the side:** stick the spacers on the **silicone-pad side** of the sheet (the side that faces the case), **not on the PCB side**. Once the sheet is lying on the PCB, that's the side facing up.
 
@@ -119,19 +137,15 @@ The transparent sheet with the black pads is lying on the PCB (step 5). It's muc
 2. Lay it over the 16 pads in one go, starting from one edge and going progressively to avoid bubbles. Each round hole goes over a LED, with the slot vertical, as in the photos.
 3. Check that you can see the LED through each round hole and the black pad through each slot.
 
-> Using the 16 individual spacers instead? Same thing, one spacer on each pad.
-
 ![Laying the spacer sheet](images/07-spacers-laying.jpg)
 
 ![Spacers stuck on the transparent sheet](images/08-spacers-stuck.jpg)
-
-> **Want even more sensitivity?** Stack **two layers**: stick a second full sheet (or a second spacer on each pad) on top of the first, perfectly aligned. Do the same on all 16 pads so they stay even.
 
 ### 7. Close it up
 
 Reverse the steps:
 
-1. Swing the PCB back over the case, the reverse of how you took it out, with the transparent sheet and its spacers lying on it. The sheet ends up against the silicone pads, the same way up as it came out. Take your time, this is where it's easy to flip it.
+1. Swing the PCB back over the case, the reverse of how you took it out, with the transparent sheet lying on it (and the vinyl spacers, if you used them). The sheet ends up against the silicone pads, the same way up as it came out, and the spacers sit between them. Take your time, this is where it's easy to flip it.
 2. Check that the PCB is lined up on its posts.
 3. Refit the 9 black PCB screws, and only those. Leave the centre hole empty (it's for the case screw, see step 4).
 4. Plug the battery back in (last, once the PCB is screwed down).
@@ -159,10 +173,12 @@ The mod fixes the hardware, but the pads still need to be calibrated in software
 
 Play all 16 pads, soft and hard.
 
-- **Still not sensitive enough?** Add a **second layer** of spacers, or use a **slightly thicker sheet**.
-- **Some pads stay constantly lit?** The sheet is **too thick**: use a **thinner one**.
+- **Still not sensitive enough?** Add a **second layer** of tape, or use a **slightly thicker** spacer.
+- **Some pads are stuck on (steady white)?** The spacer is a bit too thick for that pad. In my tape test two pads did that (the photo shows PAD 6 and PAD 4). Two easy fixes: lower that pad's level in the MidiSuite calibration (step 8), and/or **loosen a PCB screw a little** near that pad to relieve the pressure. If it persists, use thinner tape on that pad.
 
-Since the mod is fully reversible, you can open the unit again (steps 1 to 7) and swap the sheet as many times as needed.
+![Two pads stuck on](images/10-stuck-pads.jpg)
+
+Since the mod is fully reversible, you can open the unit again (steps 1 to 7) and redo the spacers as many times as needed.
 
 ## Disclaimer
 
