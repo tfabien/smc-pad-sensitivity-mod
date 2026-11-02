@@ -14,7 +14,7 @@ I tried three kinds of spacers. **Strips of electrical tape are the clear winner
 
 | Method | Result | Status |
 |---|---|---|
-| **Electrical tape** | **Best.** Surprisingly the most effective, the thickness is just right. Two pads ended up stuck on, easily fixed with the calibration and by loosening a screw a little (see step 9) | **Recommended**, tested |
+| **Electrical tape** | **Best.** Surprisingly the most effective, the thickness is just right. Two pads ended up stuck on, easily fixed with the calibration and by loosening a screw a little (see step 8) | **Recommended**, tested |
 | Laser-cut vinyl | Works, but doesn't add much sensitivity | Experimental, needs refining |
 | 3D-printed | The worst: a lot of pads stuck on | Experimental, needs refining |
 
@@ -125,7 +125,7 @@ Stick **two strips of electrical tape on each silicone pad** in the top shell, o
 
 ![Electrical tape strips on the silicone pads](images/07-tape-spacers.jpg)
 
-> **Want more sensitivity?** Add a second layer of tape. **Pads stay lit?** Too thick, see step 9.
+> **Want more sensitivity?** Add a second layer of tape. **Pads stay lit?** Too thick, see step 8.
 
 **Laser-cut vinyl (experimental)**
 
@@ -152,29 +152,27 @@ Reverse the steps:
 5. Fit the bottom plate and refit the 9 case screws (4 corners, 4 mid-side, and the centre one, which goes through the PCB hole).
 6. Put the rubber feet back, stick the QR label back, push the 8 knobs on.
 
-Plug it in and power it on. Last step: calibrate the pads in software.
+Plug it in and power it on. Last step: test and calibrate the pads in software.
 
-### 8. Calibrate the pads in MidiSuite
+### 8. Test and calibrate in MidiSuite
 
-The mod fixes the hardware, but the pads still need to be calibrated in software, otherwise you won't get the full benefit.
+MidiSuite, M-Vave's editor, is the tool to check that your hits are properly registered and to adjust the sensitivity of each pad.
 
-1. Install **MidiSuite**, M-Vave's editor (v1.15.0 in the screenshot). All downloads are on the official page: [m-vave.com/download](https://www.m-vave.com/download). Direct links to the current version:
+1. Install **MidiSuite** (v1.15.0 in the screenshots). All downloads are on the official page: [m-vave.com/download](https://www.m-vave.com/download). Direct links to the current version:
    - Windows: [MidiSuite_new.zip](https://yms-file-store.oss-cn-hongkong.aliyuncs.com/software/pc/MidiSuite_new.zip)
    - macOS: [MidiSuite_new.dmg](https://yms-file-store.oss-cn-hongkong.aliyuncs.com/software/pc/MidiSuite_new.dmg)
    - Mobile apps: [iOS](https://apps.apple.com/us/app/midi-suite/id6737530581) and [Android (APK)](https://resource.m-vave.com/software/app/MidiSuite.apk) (the mobile app lists the SMC-PAD Pocket, not the SMC-PAD, so use the desktop version)
 2. Connect the SMC-PAD and open MidiSuite.
-3. Click **Pad Calibration Mode**.
-4. Every pad has its own sensitivity level, from **Level 1 to Level 8** (factory setting: **Level 4**). Changes are saved to the device immediately.
-5. Hit a pad, adjust its level, hit it again. Repeat for each of the 16 pads until they all feel even.
+3. **Test your hits.** Play the pads, soft and hard, slow and fast. The **Midi Code** frame at the top right shows every hit that is registered: a green `Note ON` with the note and the velocity (the last value, in hexadecimal), then a red `Note OFF`. Check that all your hits show up, that the velocity follows how hard you hit, and that quick repeated hits are all registered. Use **Clear** to empty the frame.
+
+![MidiSuite with the Midi Code frame](images/09-midisuite-monitor.jpg)
+
+4. **Adjust the sensitivity.** Click **Pad Calibration Mode**. Every pad has its own level, from **Level 1 to Level 8** (factory setting: **Level 4**). Changes are saved to the device immediately. Hit a pad, adjust its level, check the Midi Code frame again, and repeat for each of the 16 pads until they all feel even.
 
 ![MidiSuite pad calibration](images/09-pad-calibration.jpg)
 
-### 9. Test and fine-tune
-
-Play all 16 pads, soft and hard.
-
-- **Still not sensitive enough?** Add a **second layer** of tape, or use a **slightly thicker** spacer.
-- **Some pads are stuck on (steady white)?** The spacer is a bit too thick for that pad. In my tape test two pads did that (the photo shows PAD 6 and PAD 4). Two easy fixes: lower that pad's level in the MidiSuite calibration (step 8), and/or **loosen a PCB screw a little** near that pad to relieve the pressure. If it persists, use thinner tape on that pad.
+5. **Still not sensitive enough** after raising the level? Add a **second layer** of tape, or use a **slightly thicker** spacer.
+6. **Some pads are stuck on (steady white)?** The spacer is a bit too thick for that pad. In my tape test two pads did that (the photo shows PAD 6 and PAD 4). Two easy fixes: lower that pad's level in the calibration, and/or **loosen a PCB screw a little** near that pad to relieve the pressure. If it persists, use thinner tape on that pad.
 
 ![Two pads stuck on](images/10-stuck-pads.jpg)
 
