@@ -1,12 +1,12 @@
 # M-Vave SMC-PAD: pad sensitivity mod
 
+> **Warning: this mod voids your warranty. You do it entirely at your own risk and I am not responsible for any damage, see the [disclaimer](#disclaimer).**
+
 Your SMC-PAD pads feel dead and you have to hammer them to get a decent velocity? This is a ~20 minute fix: open the unit, add a thin spacer on each pad, close it. No soldering, no glue gun, no 15-minute video. And the mod is **fully reversible**: nothing is cut or glued to the unit itself, peel the spacers off and it's back to stock.
 
 I tried three kinds of spacers. **Strips of electrical tape are the clear winner** (and the cheapest), so that's what this guide recommends. The laser-cut and 3D-printed files are **experimental** and still need refining, see the comparison below.
 
 > Inspired by Owl Muso's [M Vave SMC Pad Sensitivity Hack](https://www.youtube.com/watch?v=G5knDHVOgrA). Same idea, minus the video: ready-made spacer files and a step-by-step with annotated photos.
-
-> **Warning:** this mod voids your warranty and you do it at your own risk, see the [disclaimer](#disclaimer).
 
 ![The M-Vave SMC-PAD](images/00-product.jpg)
 
@@ -21,7 +21,7 @@ I tried three kinds of spacers. **Strips of electrical tape are the clear winner
 
 ## What you need
 
-- A **PH0** Phillips screwdriver
+- A **PH00** Phillips screwdriver
 - A plastic pry tool, or a fingernail, to remove the rubber feet and the QR label
 - **Electrical tape** (recommended): any common black PVC electrical tape, and scissors or a cutter
 - or, experimental: laser-cut self-adhesive vinyl, or 3D-printed spacers (files below)
